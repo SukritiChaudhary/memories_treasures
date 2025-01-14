@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memories Treasure</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Memories Treasure</h1>
+    </header>
+  
+    
+    <audio id="background-music" autoplay> 
+      <source src="Woh Din Chhichhore 128 Kbps.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+
+    <section id="slider">
+        <h2 style="text-decoration: underline;">Old Memories</h2>
+        <h1 style="font-size: 1.5cm;  cursor: pointer;">😍</h1>
+        <h4> (click this emoji so that it keeps smile on your face:))</h4>
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <img src="WhatsApp Image 2025-01-01 at 11.07.22_dbce0aa6.jpg" alt="Photo 4">
+                <div class="text">Smiles that can light up the darkest days.</div>
+            </div>
+            <div class="mySlides fade">
+                <img src="jiya1.jpg" alt="Photo 1">
+                <div class="text">Time changes everything, but memories stay in the heart forever.</div>
+            </div>
+            <div class="mySlides fade">
+                <img src="ccool.jpg" alt="Photo 7">
+                <div class="text">Together, we create timeless memories.</div>
+            </div>
+            <div class="mySlides fade">
+                <img src="WhatsApp Image 2025-01-01 at 11.07.22_9914babc.jpg" alt="Photo 2">
+                <div class="text">The greatest happiness in life is hidden in small moments.</div>
+            </div>
+            <div class="mySlides fade">
+                <img src="jiya3.jpg" alt="Photo 3">
+                <div class="text">No matter where we go, or how old we grow, our bond will be unbreakable for life.</div>
+            </div>
+           
+            <div class="mySlides fade">
+                <img src="WhatsApp Image 2025-01-04 at 16.10.01_4f5cc51a.jpg" alt="Photo 5">
+                <div class="text">Laughter echoes in our hearts forever.</div>
+            </div>
+            <div class="mySlides fade">
+                <img src="tex.jpg" alt="Photo 6">
+                <div class="text">Cherishing every precious moment.</div>
+            </div>
+           
+            <div class="mySlides fade">
+                <img src="WhatsApp Image 2025-01-01 at 11.07.24_d5d4c014.jpg" alt="Photo 8">
+                <div class="text">Friendship is the thread that ties our hearts together.</div>
+            </div>
+            <div class="mySlides fade">
+                <img src="umah).jpg" alt="Photo 9">
+                <div class="text">Moments like these are the ones we hold dear.</div>
+            </div>
+            <div class="mySlides fade">
+                <img src="ummahg.jpg" alt="Photo 10">
+                <div class="text">The joy of being together is irreplaceable.</div>
+            </div>
+            <div class="mySlides fade">
+                <img src="beauty.png" alt="Photo 11">
+                <div class="text">Memories that will last a lifetime.</div>
+            </div>
+            <div class="mySlides fade">
+                <img src="WhatsApp Image 2025-01-01 at 11.07.26_5fd6310a.jpg" alt="Photo 12">
+                <div class="text">Every moment is a treasure with you.</div>
+            </div>
+            <div class="mySlides fade">
+                <img src="waoo.jpg" alt="Photo 13">
+                <div class="text">Growing up, but never apart.</div>
+            </div>
+            <div class="mySlides fade">
+                <img src="WhatsApp Image 2025-01-01 at 11.07.26_a9121bc8.jpg" alt="Photo 14">
+                <div class="text">Endless laughter, boundless love.</div>
+            </div>
+            <div class="mySlides fade">
+                <img src="nice(1).jpg" alt="Photo 14">
+                <div class="text">Capturing the magic of our friendship</div>
+            </div>
+            <div class="mySlides fade">
+                <img src="tata.jpg" alt="Photo 16">
+                <div class="text">Forever young, forever connected.</div>
+            </div>
+            <div class="mySlides fade">
+                <img src="kyabaat.jpg" alt="Photo 17">
+                <div class="text">In every photo, a story of us.</div>
+            </div>
+            <div class="mySlides fade">
+                <img src="ohoo.jpg" alt="Photo 18">
+                <div class="text">Moments of joy, forever engraved in our hearts.</div>
+            </div>
+        </div>
+    </section>
+    
+    <h2> HeY cUtiE!😁..WaNt tO seE SurPriSe..?? </h2>
+    <div class="center-wrapper">
+        <div class="container"> 
+            <h2 style="font-family: 'Times New Roman', Times, serif;" > "Enter your name" </h2> 
+            <input type="text" id="username" placeholder="Enter your name" style="margin-bottom: 10px;">
+            <button onclick="showMessage()">Submit</button>
+            <p id="message"></p> 
+        </div>
+    </div>
+    <section class="special-moments">
+        <h1 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; color: #0f0303; text-decoration: underline;">"Our Special Moments"</h1> 
+        <div class="icon-container">
+           <i class="fa fa-images gallery-icon icon" onclick="openModal('gallery')"></i>
+           <div class="gallery-label">Gallery</div>
+       </div>
+       <div class="icon-container">
+           <i class="fa fa-video video-icon icon" onclick="openModal('video')"></i>
+           <div class="video-label">Videos</div>
+       </div>
+        </section> 
+
+        <div id="videoModal" class="modal"> 
+            <span class="close" onclick="closeModal('video')">&times;</span> 
+            <div class="modal-content"> 
+                <video controls>
+                    <source src="WhatsApp Video 2025-01-14 at 13.22.41_025f12ad.mp4" type="video/mp4">
+                </video>
+                <video controls>
+                    <source src="WhatsApp Video 2025-01-14 at 13.03.53_ee88cd22.mp4"video/mp4">
+                    
+                </video>
+                <video controls>
+                    <source src="WhatsApp Video 2025-01-14 at 13.00.50_03c3148e.mp4"video/mp4">
+                    
+                </video>
+                <video controls>
+                    <source src="WhatsApp Video 2025-01-14 at 12.58.03_93cb9880.mp4"video/mp4">
+                    
+                </video>
+                <video controls>
+                    <source src="WhatsApp Video 2025-01-14 at 12.58.03_011ac228.mp4"video/mp4">
+                    
+                </video>
+                <video controls>
+                    <source src="WhatsApp Video 2025-01-14 at 12.58.02_a0fff95f.mp4"video/mp4">
+                    
+                </video>
+                <video controls>
+                    <source src="WhatsApp Video 2025-01-14 at 12.58.02_738283d1.mp4"video/mp4">
+                    
+                </video>
+                <video controls>
+                    <source src="WhatsApp Video 2025-01-14 at 12.48.54_541b2668.mp4"video/mp4">
+                    
+                </video>
+                <video controls>
+                    <source src="WhatsApp Video 2025-01-14 at 12.45.19_7fa65bb5.mp4"video/mp4">
+                    
+                </video>
+                <video controls>
+                    <source src="WhatsApp Video 2025-01-14 at 12.45.12_881fea0d.mp4"video/mp4">
+                    
+                </video>
+                <video controls>
+                    <source src="WhatsApp Video 2025-01-14 at 12.45.06_80261497.mp4"video/mp4">
+                    
+                </video>
+                <video controls>
+                    <source src="WhatsApp Video 2025-01-14 at 12.45.05_3ca8407e.mp4"video/mp4">
+                    
+                </video>
+                <video controls>
+                    <source src="WhatsApp Video 2025-01-14 at 12.44.55_878ac1dd.mp4"video/mp4">
+                
+                </video>
+                <video controls>
+                    <source src="WhatsApp Video 2025-01-14 at 12.44.59_2db0a869.mp4"video/mp4">
+                    
+                </video>
+                <video controls>
+                    <source src="WhatsApp Video 2025-01-14 at 12.44.51_81348558.mp4"video/mp4">
+                    
+                </video>
+                <video controls>
+                    <source src="WhatsApp Video 2025-01-14 at 12.44.50_81c11db1.mp4"video/mp4">
+                    
+                </video>
+                <video controls>
+                    <source src="WhatsApp Video 2025-01-14 at 12.44.49_9246a4f6.mp4"video/mp4">
+                    
+                </video>
+                <video controls>
+                    <source src="WhatsApp Video 2025-01-14 at 12.44.47_25feab28.mp4"video/mp4">
+                    
+                </video>
+                <video controls>
+                    <source src="WhatsApp Video 2025-01-14 at 12.44.48_df434396.mp4"video/mp4">
+                    
+                </video>
+                <video controls>
+                    <source src="WhatsApp Video 2025-01-14 at 12.44.48_d30155d6.mp4"video/mp4">
+                    
+                </video>
+                <video controls>
+                    <source src="WhatsApp Video 2025-01-14 at 12.44.47_be5d6e0b.mp4"video/mp4">
+                    
+                </video>
+                <video controls>
+                    <source src="WhatsApp Video 2025-01-14 at 12.44.47_25feab28.mp4"video/mp4">
+                    
+                </video>
+                <video controls>
+                    <source src="WhatsApp Video 2025-01-14 at 12.44.47_1661b822.mp4"video/mp4">
+                    
+                </video>
+                <video controls>
+                    <source src="WhatsApp Video 2025-01-14 at 12.44.46_b6bd18b3.mp4"video/mp4">
+                    
+                </video>
+                <video controls>
+                    <source src="WhatsApp Video 2025-01-14 at 12.44.40_67966e8e.mp4"video/mp4">
+                    
+                </video>
+                <video controls>
+                    <source src="WhatsApp Video 2025-01-14 at 12.44.12_8a66de57.mp4"video/mp4">
+                    
+                </video>
+                <video controls>
+                    <source src="WhatsApp Video 2025-01-14 at 12.44.00_003276ac.mp4"video/mp4">
+                    
+                </video>
+                <video controls>
+                    <source src="WhatsApp Video 2025-01-14 at 12.43.53_e03a5c64.mp4"video/mp4">
+                    
+                </video>
+                
+            </div>
+        </div>
+
+           <div id="galleryModal" class="modal"> 
+           <span class="close" onclick="closeModal('gallery')">&times;</span> 
+           <span class="close-enlarged" onclick="closeFullSizeImage()">&times;</span>
+           <div class="modal-content"> 
+           <img src="WhatsApp Image 2025-01-04 at 16.12.51_0fb9292b.jpg" alt="Photo 4"onclick="showFullSizeImage(this.src)">
+           <img src="WhatsApp Image 2025-01-04 at 16.12.50_d475d08e.jpg" alt="Photo 5" onclick="showFullSizeImage(this.src)">
+           <img src="WhatsApp Image 2025-01-04 at 16.12.52_d10f0add.jpg" alt="Photo " onclick="showFullSizeImage(this.src)">
+           <img src="WhatsApp Image 2025-01-04 at 16.12.51_4828c0a0.jpg" alt="Photo 3" onclick="showFullSizeImage(this.src)">
+           <img src="WhatsApp Image 2025-01-04 at 16.10.02_9d2a3ab0.jpg" alt="Photo 6" onclick="showFullSizeImage(this.src)">
+           <img src="WhatsApp Image 2025-01-04 at 16.09.55_83f3ba1c.jpg" alt="Photo " onclick="showFullSizeImage(this.src)">
+           <img src="WhatsApp Image 2025-01-04 at 16.09.55_e7b21ab0.jpg" alt="Photo 8" onclick="showFullSizeImage(this.src)">
+           <img src="WhatsApp Image 2025-01-04 at 16.09.49_5a5e9303.jpg" alt="Photo 1" onclick="showFullSizeImage(this.src)">
+           <img src="WhatsApp Image 2025-01-04 at 16.09.59_6e74d47b.jpg" alt="Photo 1" onclick="showFullSizeImage(this.src)">
+           <img src="WhatsApp Image 2025-01-04 at 16.10.00_965e2c91.jpg" alt="Photo 1" onclick="showFullSizeImage(this.src)">
+           <img src="WhatsApp Image 2025-01-04 at 16.09.58_f92eff08.jpg" alt="Photo 1" onclick="showFullSizeImage(this.src)">
+           <img src="WhatsApp Image 2025-01-04 at 16.09.47_c5f99389.jpg" alt="Photo 1" onclick="showFullSizeImage(this.src)">
+           <img src="WhatsApp Image 2025-01-04 at 16.09.52_3e7f3c25.jpg" alt="Photo 1" onclick="showFullSizeImage(this.src)">
+           <img src="WhatsApp Image 2025-01-04 at 16.09.59_d9a1ae50.jpg" alt="Photo 1" onclick="showFullSizeImage(this.src)">
+           <img src="WhatsApp Image 2025-01-04 at 16.09.58_f0565eb0.jpg" alt="Photo 1" onclick="showFullSizeImage(this.src)">
+           <img src="WhatsApp Image 2025-01-04 at 16.09.58_2f331a52.jpg" alt="Photo 1" onclick="showFullSizeImage(this.src)">
+           <img src="WhatsApp Image 2025-01-04 at 16.09.57_6d54a29d.jpg" alt="Photo 1" onclick="showFullSizeImage(this.src)">
+           <img src="WhatsApp Image 2025-01-04 at 16.09.57_141bc722.jpg" alt="Photo 1" onclick="showFullSizeImage(this.src)">
+           <img src="WhatsApp Image 2025-01-04 at 16.09.56_fa09f548.jpg" alt="Photo 1" onclick="showFullSizeImage(this.src)">
+           <img src="cute.jpg" alt="Photo 1" onclick="showFullSizeImage(this.src)"> 
+           <img src="WhatsApp Image 2025-01-04 at 16.09.47_da9c8802.jpg" alt="Photo 1" onclick="showFullSizeImage(this.src)">
+           <img src="WhatsApp Image 2025-01-04 at 16.09.55_1bca8892.jpg" alt="Photo 1" onclick="showFullSizeImage(this.src)">
+           <img src="WhatsApp Image 2025-01-01 at 11.07.27_8616799a.jpg" alt="Photo 7" onclick="showFullSizeImage(this.src)">
+           <img src="WhatsApp Image 2025-01-04 at 16.09.54_bb5ea111.jpg" alt="Photo 1" onclick="showFullSizeImage(this.src)">
+           <img src="WhatsApp Image 2025-01-04 at 16.09.54_a3036c14.jpg" alt="Photo 1" onclick="showFullSizeImage(this.src)">
+           <img src="WhatsApp Image 2025-01-04 at 16.09.54_1966c6e4.jpg" alt="Photo 1" onclick="showFullSizeImage(this.src)">
+           <img src="cutiepie.jpg" alt="Photo 1" onclick="showFullSizeImage(this.src)">
+            <img src="WhatsApp Image 2025-01-04 at 16.09.52_b4261d81.jpg" alt="Photo 1" onclick="showFullSizeImage(this.src)">
+           <img src="WhatsApp Image 2025-01-04 at 16.09.52_5e162fb2.jpg" alt="Photo 1" onclick="showFullSizeImage(this.src)">
+           <img src="WhatsApp Image 2025-01-04 at 16.09.51_f057c5ba.jpg" alt="Photo 1" onclick="showFullSizeImage(this.src)">
+          
+           <img src="WhatsApp Image 2025-01-04 at 16.09.50_f894e00e.jpg" alt="Photo 1" onclick="showFullSizeImage(this.src)">
+           <img src="beauty.png" alt="Photo 2" onclick="showFullSizeImage(this.src)">
+           <img src="cool.jpg" alt="Photo 2" onclick="showFullSizeImage(this.src)">
+           <img src="WhatsApp Image 2025-01-04 at 16.10.01_4f5cc51a.jpg" alt="Photo 1" onclick="showFullSizeImage(this.src)">
+           <img src="WhatsApp Image 2025-01-04 at 16.10.01_42dfe2dd.jpg" alt="Photo 1" onclick="showFullSizeImage(this.src)">
+           <img src="WhatsApp Image 2025-01-04 at 16.10.00_a512a922.jpg" alt="Photo 1" onclick="showFullSizeImage(this.src)">
+           <img src="WhatsApp Image 2025-01-04 at 16.10.00_bfb423d6.jpg" alt="Photo 1" onclick="showFullSizeImage(this.src)">
+           <img src="WhatsApp Image 2025-01-04 at 16.09.51_78de3d6d.jpg" alt="Photo 1" onclick="showFullSizeImage(this.src)">
+           <img src="oops.jpg" alt="Photo 1" onclick="showFullSizeImage(this.src)">
+           <img src="WhatsApp Image 2025-01-04 at 16.09.48_c4d3e3e1.jpg" alt="Photo 1" onclick="showFullSizeImage(this.src)">
+           <img src="WhatsApp Image 2025-01-04 at 16.09.48_f9961717.jpg" alt="Photo 1" onclick="showFullSizeImage(this.src)">
+           <img src="cutie.jpg" alt="Photo 1" onclick="showFullSizeImage(this.src)">
+           <img src="whh.jpg" alt="Photo 1" onclick="showFullSizeImage(this.src)">
+           <img src="pyara.jpg" alt="Photo 1" onclick="showFullSizeImage(this.src)">
+           <img src="pyari.jpg" alt="Photo 1" onclick="showFullSizeImage(this.src)">
+           <img src="hiii.jpg" alt="Photo 1" onclick="showFullSizeImage(this.src)">
+           <img src="WhatsApp Image 2025-01-14 at 12.57.59_06a5059c.jpg" alt="Photo 1" onclick="showFullSizeImage(this.src)">
+           <img src="WhatsApp Image 2025-01-14 at 12.57.59_fa00a0be.jpg" alt="Photo 1" onclick="showFullSizeImage(this.src)">
+           <img src="WhatsApp Image 2025-01-14 at 12.58.00_1dc6a840.jpg" alt="Photo 1" onclick="showFullSizeImage(this.src)">
+           <img src="memo.jpg" alt="Photo 1" onclick="showFullSizeImage(this.src)">
+           <img src="WhatsApp Image 2025-01-14 at 12.58.00_c3e444ea.jpg" alt="Photo 1" onclick="showFullSizeImage(this.src)">
+           <img src="WhatsApp Image 2025-01-14 at 12.58.01_0b111f18.jpg" alt="Photo 1" onclick="showFullSizeImage(this.src)">
+           <img src="umah.jpg" alt="Photo 1" onclick="showFullSizeImage(this.src)">
+           <img src="WhatsApp Image 2025-01-14 at 12.58.02_0f8fc26c.jpg" alt="Photo 1" onclick="showFullSizeImage(this.src)">
+           <img src="WhatsApp Image 2025-01-14 at 12.58.03_65e72a7b.jpg" alt="Photo 1" onclick="showFullSizeImage(this.src)">
+           <img src="WhatsApp Image 2025-01-14 at 12.58.04_a6cc87ea.jpg" alt="Photo 1" onclick="showFullSizeImage(this.src)">
+           <img src="WhatsApp Image 2025-01-14 at 12.58.04_c0ee93cb.jpg" alt="Photo 1" onclick="showFullSizeImage(this.src)">
+           <img src="WhatsApp Image 2025-01-14 at 12.58.05_1ffea98e.jpg" alt="Photo 1" onclick="showFullSizeImage(this.src)">
+           <img src="WhatsApp Image 2025-01-14 at 12.58.05_44e36fc9.jpg" alt="Photo 1" onclick="showFullSizeImage(this.src)">
+           <img src="WhatsApp Image 2025-01-14 at 12.58.05_78561f70.jpg" alt="Photo 1" onclick="showFullSizeImage(this.src)">
+           <img src="WhatsApp Image 2025-01-14 at 12.58.06_2d8d2e87.jpg" alt="Photo 1" onclick="showFullSizeImage(this.src)">
+           <img src="WhatsApp Image 2025-01-14 at 12.58.06_a97341cc.jpg" alt="Photo 1" onclick="showFullSizeImage(this.src)">
+           <img src="WhatsApp Image 2025-01-14 at 12.58.06_eb9f0bb6.jpg" alt="Photo 1" onclick="showFullSizeImage(this.src)">
+           <img src="WhatsApp Image 2025-01-14 at 12.58.07_3e003333.jpg" alt="Photo 1" onclick="showFullSizeImage(this.src)">
+           <img src="WhatsApp Image 2025-01-14 at 12.58.07_979bb8c3.jpg" alt="Photo 1" onclick="showFullSizeImage(this.src)">
+           <img src="WhatsApp Image 2025-01-14 at 12.58.08_5acb0849.jpg" alt="Photo 1" onclick="showFullSizeImage(this.src)">
+           <img src="WhatsApp Image 2025-01-14 at 12.58.08_7d89261d.jpg" alt="Photo 1" onclick="showFullSizeImage(this.src)">
+           <img src="WhatsApp Image 2025-01-14 at 13.03.05_a6e88c42.jpg" alt="Photo 1" onclick="showFullSizeImage(this.src)">
+           <img src="WhatsApp Image 2025-01-14 at 13.03.05_bbbfd890.jpg" alt="Photo 1" onclick="showFullSizeImage(this.src)">
+           <img src="WhatsApp Image 2025-01-14 at 13.05.26_6aa85229.jpg" alt="Photo 1" onclick="showFullSizeImage(this.src)">
+           <img src="WhatsApp Image 2025-01-14 at 13.05.27_8cd187e8.jpg" alt="Photo 1" onclick="showFullSizeImage(this.src)">
+           <img src="WhatsApp Image 2025-01-14 at 13.05.27_cfa0deb0.jpg" alt="Photo 1" onclick="showFullSizeImage(this.src)">
+           <img src="WhatsApp Image 2025-01-14 at 13.05.28_e8374844.jpg" alt="Photo 1" onclick="showFullSizeImage(this.src)">
+           <img src="WhatsApp Image 2025-01-14 at 13.17.59_850dadf6.jpg" alt="Photo 1" onclick="showFullSizeImage(this.src)">
+           <img src="WhatsApp Image 2025-01-14 at 13.18.01_7a09f224.jpg" alt="Photo 1" onclick="showFullSizeImage(this.src)">
+           <img src="WhatsApp Image 2025-01-14 at 13.18.01_f4db5313.jpg" alt="Photo 1" onclick="showFullSizeImage(this.src)">
+           <img src="WhatsApp Image 2025-01-14 at 13.18.01_ea800aa3.jpg" alt="Photo 1" onclick="showFullSizeImage(this.src)">
+           <img src="WhatsApp Image 2025-01-14 at 13.18.02_bcf73eae.jpg" alt="Photo 1" onclick="showFullSizeImage(this.src)">
+           <img src="WhatsApp Image 2025-01-14 at 13.18.02_ec4716af.jpg" alt="Photo 1" onclick="showFullSizeImage(this.src)">
+           <img src="WhatsApp Image 2025-01-14 at 13.18.03_2d9aa8f0.jpg" alt="Photo 1" onclick="showFullSizeImage(this.src)">
+           <img src="WhatsApp Image 2025-01-14 at 13.18.03_adcb1e12.jpg" alt="Photo 1" onclick="showFullSizeImage(this.src)">
+           <img src="WhatsApp Image 2025-01-14 at 13.18.03_cb9f5345.jpg" alt="Photo 1" onclick="showFullSizeImage(this.src)">
+           <img src="WhatsApp Image 2025-01-14 at 13.22.30_0ad2d119.jpg" alt="Photo 1" onclick="showFullSizeImage(this.src)">
+           <img src="WhatsApp Image 2025-01-14 at 13.22.31_37b2c103.jpg" alt="Photo 1" onclick="showFullSizeImage(this.src)">
+           <img src="WhatsApp Image 2025-01-14 at 13.22.31_5f2a4b2a.jpg" alt="Photo 1" onclick="showFullSizeImage(this.src)">
+           <img src="WhatsApp Image 2025-01-14 at 13.22.31_6fd04f97.jpg" alt="Photo 1" onclick="showFullSizeImage(this.src)">
+           <img src="hihi.jpg" alt="Photo 1" onclick="showFullSizeImage(this.src)">
+           <img src="WhatsApp Image 2025-01-14 at 13.22.32_52202c66.jpg" alt="Photo 1" onclick="showFullSizeImage(this.src)">
+           <img src="WhatsApp Image 2025-01-14 at 13.22.32_b787bf06.jpg" alt="Photo 1" onclick="showFullSizeImage(this.src)">
+           <img src="WhatsApp Image 2025-01-14 at 13.22.33_c4f80bad.jpg" alt="Photo 1" onclick="showFullSizeImage(this.src)">
+       </div>
+       <img id="fullSizeImage">
+      
+   </div>
+   <div id="fullSizeVideoContainer" class="modal">
+    <span class="close" onclick="closeFullSizeVideo()">&times;</span>
+    <video id="fullSizeVideo" controls></video>
+</div>
+
+   <section id="stories">
+    <h2 style="text-decoration: underline;">Stories and Memories</h2>
+    <article>
+        <h3>Story </h3>
+        <p>Hello Hello!!.. jaise ki ap mujhe axxe se jante hai mai hu apki sukki roti...To aj mai apko ek khoofnaak story sunati hu... wese mere pass koi story hai nahi par ..
+            hamne jitna time ek saath spend kara hai  jitna bhi vo sab mere lie bhaut precious tha sch me.... ab jab mai un dino ke baare me sochti hu to mujhy un dino ki bhaut yaad aati hai or sabse buri baat ki vo saare din ab waapis nahi aa sakte 😓... afterall hame bs abbhi 1 saal hi hua hai par us ek saal me itna akela or ajeeb feel hua na jo aj tak itne saalo me nahi hua... vo din kitne axxe the chahe vo sabke sath lunch share karke khana ho.. chahe game khelne jana ho ground me ya phir lab lejake safai karna ho🤣🤣 vo sab moments and memories bhaut axxe the ... 
+        chahe vo khushi ka vlog banana ho .. chahe vo santoshi ka gussa hona ho.. chahe vo nishtha ka ajeeb se sawal puchna ho.. chahe deepika ka har question me answer sunna ho chahe shudhanshu or shivam ka hame preshan karna ho.. chahe vo vansh dhiman se ladai karna ho... yaa jo bhi hooo........ mujhy to bhaut maja ata tha... tumhe aata ho ya nahi... 
+    tumhe yaad hai hamare vo saare moments jo hamne ghummi ghummi karne me banaye... har jagah pics lii hai hamne vo bhi mast mast walii... sab kuch ek sapne jaisa tha.. or jaise jaise time bit ta jayega ye sab moments ko beete hue bhaut time ho jayega or sab apni life me bhaut busy ho jayenge .. to ye website mene bsss isliye banai hai taki kabhi bbhi kisi ko k dusre ki yaad ay to vo ise dekh kr atleast un palo ko yaad to kar sakega or jyada yaad aayi to call bhi kr lega❤️🤣.. too bss ..."THE END"... meri story yahi khatam hoti hai but atlast tum sabhi ko thankuuuuuuuu so muchhh!! for everything for being my friends till now!!!~  and hope so ki ham log hamesha bhaut hi pyare dosto ki tarah rhe.. Good bye!! Take Care ❤️❤️  </p>
+    </article>
+</section>
+<h2 style="color: #0f0303;"> Game for you<3💗</h2>
+<section id="game1">
+   <section id="game-corner"> <h2 style="text-decoration: underline; text-align: center;">Game Corner</h2> <button1 id="game-launcher"> <img src="hiew.jpg" alt="Game Icon" id="game-icon"> </button1> </section>
+    <div id="gameModal" class="modal"> <span class="close1" onclick="closeModal('game')">&times;</span> <div class="modal-content1"></div>
+    <div class="container" id="game-container">
+          <div id="game-instructions">
+            <p style="font-family: 'Times New Roman', Times, serif; font-weight: bolder; font-size: larger; text-decoration: underline; color: #0f0303;"> "A SIMPLE SCRAMBLED PICTURES GAME"</p>
+        <p>Drag and drop the pieces to complete the image. Click 'Shuffle' to start.</p>
+    </div>
+        <label for="imageSelect">Select an Image:</label>
+        <select id="imageSelect">
+            
+            <option value="">None</option>
+            <option value="tum.jpg">Image 1</option>
+            <option value="umah.jpg">Image 2</option>
+            <option value="pyarr.jpg">Image 3</option>
+            <option value="love.jpg">Image 4</option>
+        </select><br>
+
+        <div id="puzzle"></div>
+        <br>
+        <button id="shuffle">Shuffle</button>
+    </div>
+    <div id="fireworks"></div>
+    <div id="congrats-text">You have completed the puzzle!</div>
+</section>
+<footer>
+<h5> Thankuuuu soo much!!! for visiting my website 💗✨ </h5>
+<h1>📞   🧸  🍕  ❤️</h1> 
+<h6>(Agar tum is website ko dekh kar khush hue to meko call bhi kar sakte ho message bhi, or teddy v de sakte ho, or pizza bhi khila sakte ho, mai sab le leungi...😍😍 )</h6>
+<h6> @2025 copyright.sukku</h6>
+</footer>
+<script src="script.js"></script>
+</body>
+
+</html>
