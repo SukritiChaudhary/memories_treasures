@@ -31,7 +31,7 @@ case 'sukriti':
 case 'khushi':
     message = 'Thankuu so much!! sab chiz ke lie bachpan se leke ab tak hame 10 saal se v jyada ho gye par hamari jo dosti hai vo abhi bhi un 6th class ke bacho ki tarah hai!! bhaut pyariiii... nazar na lagee thuu thuu!! 🧿❤️and love you so much !!! kabhi bhi meri need ho life me to bs ek call kar dena bina kux soche ..✨🫂';
     break;
-case 'buddy':
+case 'swaaa':
     message = 'haa, apke bare me to kya kehna ap to mast admi hai... 😍🤣 but schii thankuuu so much for everything my buddy .. tu bhaut axa hai sch me .. ye teko v pata hai 🤣🤣parr best banda hai tu.. mai to  dekh hamesha yahi wish karungi tere lie ki tujhy jindgi me jo chhaiye vo ytujhy mil jayee 🤣🤣❤️.. tere soche hue goals sab pure ho or tu hamesha khush rhe.. tuuu jis din success hoga mai sach me us din bhaut khush hongi... and haa apni shadi me jarur bulana mujhy ok my swaa!!! apna dhyna rakha kar jab tak koi gf ni ban jati dhyn rkhne wali... 🤣🫂🧸✨✨✨✨✨❤️❤️❤️❤️  '
     break;
 case 'santoshi':
@@ -59,9 +59,9 @@ case 'nishtha':
     message = 'ap ho ek decent si pyari si ldki.. jo thodi introvert hai par jab baat karti hai to maja taa hai.. thnku ye 2 saal mere sath bitane ke lie.. mujhy bhaut axa laga apke sath...💖💖🧸'
     break;
     case 'radheshyam': 
-    message = 'bhaut yaad ati hai na terko meri.. ye le website bana di tere lie🤣🤣...ab jab bhi tu ise dekhega tab or yaad aa jayegi... maja aya par tere sath 10th me v 1th me v or 12th me bhi.. good luck for ur future.. 🫂💖💖💖🧸'
+    message = 'bhaut yaad ati hai na terko meri.. ye le website bana di tere lie🤣🤣...ab jab bhi tu ise dekhega tab or yaad aa jayegi... maja aya par tere sath 10th me v 11th me v or 12th me bhi.. good luck for ur future.. 🫂💖💖💖🧸'
     break;
-    case'harshit':
+    case 'harshit':
     message = 'thankuu so much itne saal mere sath axxe se rehne ke lie.. tu bhaut axa hai par or hmesha aise hi rehna.. good luck for ur future harshit✨✨'
     break;
 default:
