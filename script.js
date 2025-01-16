@@ -26,7 +26,7 @@ let message = '';
 
 switch (username.toLowerCase()) {
 case 'sukriti':
-    message = 'I love you';
+    message = ' wao wao waooo,I love you😍😍😍❤️❤️';
     break;
 case 'khushi':
     message = 'Thankuu so much!! sab chiz ke lie bachpan se leke ab tak hame 10 saal se v jyada ho gye par hamari jo dosti hai vo abhi bhi un 6th class ke bacho ki tarah hai!! bhaut pyariiii... nazar na lagee thuu thuu!! 🧿❤️and love you so much !!! kabhi bhi meri need ho life me to bs ek call kar dena bina kux soche ..✨🫂';
@@ -45,6 +45,24 @@ case 'nishtha':
     break;
     case 'shivam': 
     message = 'Thankuuuu so much for everything.. tere sath ye do saal kab gye pata hi nhi chala bhaut maja aaya... hamari ladai v .. ek dusre ko marna bhi.. or aise hi har saal ham milte rhenge or khoob maja karenge..💗🫂'
+    break;
+  case 'siddharth': 
+    message = 'ap bhaut axxe hai or hope so hamesha rahoge bhi... apke sath 2 saal bitake bhaut axa laga thanku so much for being my friend.. 💖'
+    break;
+    case 'deepika': 
+    message = 'ap bhaut axxe hai or hope so hamesha rahoge bhi... aise hi mehnat ke sath padai karte raho dekhna ek din jrur IS banoge..  thaku ek axxa sa dost banne ke lie... 🫂💖.. 💖'
+    break;
+    case 'mehak': 
+    message = 'tere sath tym karke bhaut axa lga thodi khadoos hai tu.. gussa ho jati hai.. par i love challenges🤣🤣..baki love you.. bhaut axxi h tuu ..bs hamse baat v kar lia kar kabhi kabhi .. kux chla thodi jayega... 💖'
+    break;
+    case 'aradhna': 
+    message = 'ap ho ek decent si pyari si ldki.. jo thodi introvert hai par jab baat karti hai to maja taa hai.. thnku ye 2 saal mere sath bitane ke lie.. mujhy bhaut axa laga apke sath...💖💖🧸'
+    break;
+    case 'radheshyam': 
+    message = 'bhaut yaad ati hai na terko meri.. ye le website bana di tere lie🤣🤣...ab jab bhi tu ise dekhega tab or yaad aa jayegi... maja aya par tere sath 10th me v 1th me v or 12th me bhi.. good luck for ur future.. 🫂💖💖💖🧸'
+    break;
+    case'harshit':
+    message = 'thankuu so much itne saal mere sath axxe se rehne ke lie.. tu bhaut axa hai par or hmesha aise hi rehna.. good luck for ur future harshit✨✨'
     break;
 default:
     message = 'Name not recognized';
